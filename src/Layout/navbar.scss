@@ -1,0 +1,26 @@
+
+$main-width : 1440px;
+$background : #0052CC;
+
+.BackGround_pic{
+    background-image: url('/src/assets/backGroundImg.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar_height{
+    max-width: $main-width;
+    margin: auto;
+}
+.navbar_section{
+    display: flex;
+    justify-content: space-between;
+    .login_resigter-section{
+        .login{
+            background: $background;
+            color: white;
+            padding: 8px 24px;
+            border-radius: 10px;
+        }
+    }
+}
