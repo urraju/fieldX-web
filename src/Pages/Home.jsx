@@ -13,7 +13,7 @@ const Home = () => {
              <AboutPage/>
              <QuestionAns/>
              <IconSection/>
-             <Footer/>
+              
         </div>
     )}
 export default Home;

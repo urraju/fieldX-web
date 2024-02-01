@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return(
@@ -9,9 +10,9 @@ const Navbar = () => {
                 </div>
                 <div className="flex gap-4">
 
-                    <button className='bg-[#0052CC] rounded-lg py-1 px-5 text-white font-manrope'>Login</button>
+                   <Link to='/login'> <button className='bg-[#0052CC] rounded-lg py-1 px-5 text-white font-manrope'>Login</button></Link>
                     
-                    <button className='border text-[#0052CC] border-[#0052CC] shadow-md shadow-[#0052CC] rounded-lg py-1 px-5  font-manrope'>Register</button>
+                   <Link to='/register'> <button className='border text-[#0052CC] border-[#0052CC] shadow-md shadow-[#0052CC] rounded-lg py-1 px-5  font-manrope'>Register</button></Link>
 
                 </div>
             </div>
