@@ -1,7 +1,9 @@
 import AboutPage from "../Layout/AboutPage";
 import Banner from "../Layout/Banner";
 import Footer from "../Layout/Footer";
+import IconSection from "../Layout/IconSection";
 import ProductFeatures from "../Layout/ProductFeatures";
+import QuestionAns from "../Layout/QuestionAns";
 
 const Home = () => {
     return(
@@ -9,6 +11,8 @@ const Home = () => {
              <Banner/>
              <ProductFeatures/>
              <AboutPage/>
+             <QuestionAns/>
+             <IconSection/>
              <Footer/>
         </div>
     )}

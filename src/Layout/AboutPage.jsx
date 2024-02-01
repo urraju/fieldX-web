@@ -19,7 +19,7 @@ const AboutPage = () => {
             <div className="flex">
               <img src="/src/assets/All_img/dash-2.png" alt="" />
               <img
-                className="h-max image_shadow rounded-2xl"
+                className="h-max image_shadow mt-5 rounded-2xl"
                 src="/src/assets/All_img/dash-3.png"
                 alt=""
               />
@@ -43,7 +43,7 @@ const AboutPage = () => {
         </div>
 
         {/* prize section  */}
-        <div className="grid grid-cols-2 md:grid-cols-4  max-w-screen-xl mx-auto py-20">
+        <div className="grid grid-cols-2 md:grid-cols-4  max-w-screen-xl mx-auto py-16">
 
             <div className="text-center font-manrope">
                 <img className="mx-auto" src="/src/assets/icon/monitor-mobbile.png" alt="" />
