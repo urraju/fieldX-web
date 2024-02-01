@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import { MdDashboard } from "react-icons/md";
+import useAuth from "../Shared/useAuth";
 
 const Navbar = () => {
+    const {user} = useAuth()
     return(
         <div className='relative'>
             
@@ -8,11 +11,13 @@ const Navbar = () => {
                 <div>
                     <img src="/src/assets/All_img/FieldX.png" alt="" />
                 </div>
-                <div className="flex gap-4">
+                <div className="flex gap-4 items-center">
 
-                   <Link to='/login'> <button className='bg-[#0052CC] rounded-lg py-1 px-5 text-white font-manrope'>Login</button></Link>
+                   {user ?  <Link to='/dashboard'><MdDashboard className="text-3xl text-color"/></Link> : ''}
+
+                   <Link to='/login'> <button className='bg-[#0052CC] rounded-md py-1 px-5 text-white font-manrope'>Login</button></Link>
                     
-                   <Link to='/register'> <button className='border text-[#0052CC] border-[#0052CC] shadow-md shadow-[#0052CC] rounded-lg py-1 px-5  font-manrope'>Register</button></Link>
+                   <Link to='/register'> <button className='border text-[#0052CC] border-[#0052CC] shadow-md shadow-[#0052CC] rounded-md py-1 px-5  font-manrope'>Register</button></Link>
 
                 </div>
             </div>
