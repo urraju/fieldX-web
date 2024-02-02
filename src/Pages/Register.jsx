@@ -21,7 +21,7 @@ const Register = () => {
 
   const onSubmit = (data) => {
     registation(data.email, data.password).then((result) => {
-      
+      console.log(result.data);
       const userInfo = {
         name: data.name,
         email: data.email,
@@ -47,8 +47,7 @@ const Register = () => {
         navigate(location.state ? location.state : "/");
         reset()
       });
-      const loggedUser = result.user;
-      console.log(loggedUser);
+      
     });
   };
 

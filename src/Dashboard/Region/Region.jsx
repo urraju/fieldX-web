@@ -5,10 +5,10 @@ import { Link, NavLink } from "react-router-dom";
 
 const Region = () => {
   const axiosPublic = useAxiosPublic();
-  const { data: users = [] } = useQuery({
+  const { data: area = [] } = useQuery({
     queryKey: ["users"],
     queryFn: async () => {
-      const res = await axiosPublic.get("/users");
+      const res = await axiosPublic.get("/area");
       return res.data;
     },
   });
@@ -51,7 +51,7 @@ const Region = () => {
                 </tr>
               </thead>
               <tbody className="">
-                {users.map((item, index) => (
+                {area.map((item, index) => (
                   <tr key={item._id}>
                     <th>
                       <label className="text-sm">
@@ -59,8 +59,8 @@ const Region = () => {
                       </label>
                     </th>
                     <th>{index + 1}</th>
-                    <th>{item.name}</th>
-                    <td>{item.email}</td>
+                    <th>{item.regio}</th>
+                    <td>{item.area}</td>
                   </tr>
                 ))}
               </tbody>

@@ -9,6 +9,7 @@ import Area from "../Dashboard/Area/Area";
 import Region from "../Dashboard/Region/Region";
 import CreateArea from "../Dashboard/CreateArea/CreateArea";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import EmptyPage from "../Dashboard/EmptyPage";
 
 const router = createBrowserRouter([
   {
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
       {
         path: "createarea",
         element: <CreateArea />,
+      },
+      {
+        path: "emptypage",
+        element: <EmptyPage />,
       },
     ],
   },

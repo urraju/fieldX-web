@@ -13,7 +13,7 @@ const Navbar = () => {
                 </div>
                 <div className="flex gap-4 items-center">
 
-                   {user ?  <Link to='/dashboard'><MdDashboard className="text-3xl text-color"/></Link> : ''}
+                   {user ?  <Link to='/dashboard/emptypage'><MdDashboard className="text-3xl text-color"/></Link> : ''}
 
                    <Link to='/login'> <button className='bg-[#0052CC] rounded-md py-1 px-5 text-white font-manrope'>Login</button></Link>
                     

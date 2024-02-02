@@ -2,10 +2,11 @@ import { Link, NavLink, Outlet } from "react-router-dom";
 import { CiLocationOn } from "react-icons/ci";
 import logo from '../assets/all_img/FieldX (1).png'
 import profile from '../assets/all_img/user bg.png'
+import EmptyPage from "./EmptyPage";
 const Dashboard = () => {
     return(
         <div className="max-w-[1440px] mx-auto my-20">
-             <div className="px-8 py-2  bg-white shadow-[#0052cc07] font-manrope shadow-xl flex items-center justify-between">
+             <div className="px-8 py-2 z-30 bg-white shadow-[#0052cc07] font-manrope shadow-xl flex items-center justify-between">
                 <Link to='/'><img src={logo} alt="" /></Link>
                 <div className="flex gap-3 items-center">
                     <img className="h-max" src={profile} alt="" />

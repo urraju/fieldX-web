@@ -79,7 +79,7 @@ const Region = () => {
             <label className="text-lg font-semibold py-2 mb-2 font-manrope" >
                 Region
             <select
-            className="w-full border rounded-lg px-2 font-light text-sm py-2 mt-3"
+            className="w-full outline-none  border rounded-lg px-2 font-light text-sm py-2 mt-3"
              name="regio">
                 <option value="select region">Select Region</option>
                 <option value="dhaka">Dhaka</option>
@@ -96,7 +96,7 @@ const Region = () => {
             <label className="text-lg font-semibold   font-manrope" >
                 Area
             <input
-              className="w-full mt-2 border rounded-lg px-2 font-light text-sm  py-2"
+              className="w-full mt-2 outline-none border rounded-lg px-2 font-light text-sm  py-2"
               name="area"
              type="text"
              placeholder="Type Area" 
