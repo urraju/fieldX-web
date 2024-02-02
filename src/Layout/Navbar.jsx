@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { MdDashboard } from "react-icons/md";
 import useAuth from "../Shared/useAuth";
-
+import logo from '../assets/all_img/FieldX (1).png'
 const Navbar = () => {
     const {user} = useAuth()
     return(
@@ -9,7 +9,7 @@ const Navbar = () => {
             
             <div className="flex absolute top-0 left-0 right-0 justify-between z-30 items-center max-w-screen-xl mx-auto border-b border-[#0052CC] border-opacity-20  py-5">
                 <div>
-                    <img src="/src/assets/All_img/FieldX.png" alt="" />
+                    <img src={logo} alt="" />
                 </div>
                 <div className="flex gap-4 items-center">
 

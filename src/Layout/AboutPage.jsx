@@ -1,3 +1,12 @@
+
+import dash from '../assets/all_img/dash.png'
+import dashTwo from '../assets/all_img/dashTow.png'
+import dashThree from '../assets/all_img/dashThree.png'
+import man from '../assets/all_img/man.png'
+import iconOne from '../assets/icon/monitor-mobbile.png'
+import iconTwo from '../assets/icon/people.png'
+import iconThree from '../assets/icon/user.png'
+import iconfour from '../assets/icon/cup.png'
 const AboutPage = () => {
   return (
     <div className="my-20 mt-44 ">
@@ -12,15 +21,15 @@ const AboutPage = () => {
 
             <img
               className="mx-auto ml-24 h-max"
-              src="/src/assets/All_img/dash-1.png"
+              src={dash}
               alt=""
             />
 
             <div className="flex">
-              <img src="/src/assets/All_img/dash-2.png" alt="" />
+              <img src={dashTwo} alt="" />
               <img
                 className="h-max image_shadow mt-5 rounded-2xl"
-                src="/src/assets/All_img/dash-3.png"
+                src={dashThree}
                 alt=""
               />
             </div>
@@ -33,7 +42,7 @@ const AboutPage = () => {
 
             <p className="text-gray-500 py-7 text-lg border-b">Sed ut perspiciatis unde omnis iste natus error sit voluptatem <br /> accusantium doloremque laudantium, totam rem aperiam, <br /> eaque ipsa quae ab illo inventore veritatis et quasi architecto <br />beatae vitae dicta sunt explicabo.</p>
             <div className="flex items-center gap-5 py-6">
-                <img className="rounded-full" src="/src/assets/All_img/man.png" alt="" />
+                <img className="rounded-full" src={man} alt="" />
                <div className=" ">
                <p className="text-lg text-gray-500 font-semibold py-2">"Fieldx is for teams that care about <br /> their product growth."</p>
                 <h1 className="text-xl font-bold">CEO, FieldX</h1>
@@ -46,25 +55,25 @@ const AboutPage = () => {
         <div className="grid grid-cols-2 md:grid-cols-4  max-w-screen-xl mx-auto py-16">
 
             <div className="text-center font-manrope">
-                <img className="mx-auto" src="/src/assets/icon/monitor-mobbile.png" alt="" />
+                <img className="mx-auto" src={iconOne} alt="" />
                 <h1 className="text-color font-bold text-4xl py-4">10+</h1>
                 <p className="text-lg text-gray-500 font-semibold">Platforms Created</p>
             </div>
 
             <div className="text-center font-manrope">
-                <img className="mx-auto" src="/src/assets/icon/people.png" alt="" />
+                <img className="mx-auto" src={iconTwo}alt="" />
                 <h1 className="text-color font-bold text-4xl py-4">1559+</h1>
                 <p className="text-lg text-gray-500 font-semibold">Total Users</p>
             </div>
 
             <div className="text-center font-manrope">
-                <img className="mx-auto" src="/src/assets/icon/user.png" alt="" />
+                <img className="mx-auto" src={iconThree} alt="" />
                 <h1 className="text-color font-bold text-4xl py-4">10+</h1>
                 <p className="text-lg text-gray-500 font-semibold">Total Clients</p>
             </div>
 
             <div className="text-center font-manrope">
-                <img className="mx-auto" src="/src/assets/icon/cup.png" alt="" />
+                <img className="mx-auto" src={iconfour}alt="" />
                 <h1 className="text-color font-bold text-4xl py-4">300 Days</h1>
                 <p className="text-lg text-gray-500 font-semibold">In Operation</p>
             </div>

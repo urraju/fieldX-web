@@ -1,3 +1,7 @@
+
+import table from '../assets/all_img/tablet 1.png'
+import phoneOne from '../assets/all_img/phone 1.png'
+
 const Banner = () => {
   return (
     <div className="max-w-[1440px] bg-cover bg-no-repeat bg-BackGround_one   top-0 right-0 left-0 -z-30 h-[950px] mx-auto  flex justify-center items-center">
@@ -16,8 +20,8 @@ const Banner = () => {
         </div>
 
         <div className="absolute ">
-            <img className="shadow_img " src="/src/assets/All_img/tablet 1.png" alt="" />
-            <img className=" w-52 absolute top-40 left-96" src="/src/assets/All_img/phone 1.png" alt="" />
+            <img className="shadow_img " src={table} alt="" />
+            <img className=" w-52 absolute top-40 left-96" src={phoneOne} alt="" />
         </div>
       </div>
     </div>
